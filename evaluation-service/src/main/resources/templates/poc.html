@@ -1,0 +1,97 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		montaProcessos();
+		montaInstancia();
+	});
+</script>
+</head>
+
+<template id="mytemplate">
+	<div class="row">
+		<div class="col-sm-2"><p class="list-group-item-text"></p></div>
+		<div class="col-sm-2"><b></b></div>
+		<div class="col-sm-2">
+			<div class="container" id='btn'></div>
+			
+		</div>
+	</div>
+</template>
+
+<template id="formTemplate">
+	<h2>....</h2>
+	<form id='taskForm'>
+		<div class="form-group">
+		
+		</div>		
+	</form>
+</template>
+<template id="formTemplateProcesso">
+	<h2>....</h2>
+	<form id='processForm'>
+		<div class="form-group">
+		
+		</div>		
+	</form>
+</template>
+<body>
+
+
+	<div class="container">
+		<h1>POC JBPM</h1>
+		<p>conteudo</p>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Container</div>
+			<div class="panel-body" id='processo'></div>
+		</div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Instancia</div>
+			<div class="panel-body" id='instancia'></div>
+		</div>
+		
+		<div id='image_div'></div>
+		
+	</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button type="button" onclick='proximaAtividade()' name='task' class="btn btn-primary">Concluir</button>
+        <button type="button" onclick='criarProcesso()' name='processo' class="btn btn-primary">Criar Processo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
