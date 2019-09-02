@@ -16,12 +16,12 @@ POC e estudo da funcionalidade do JBPM usando as seguntes tecnologias
 ## Development
 Executar a atualização do kjar:
 ```sh
-mvn cleans istall
+mvn clean install
 ```
 
 Executar o serviço:
 ```sh
-mvn clean instal
+mvn clean install
 ```
 ou:
 ```sh
